@@ -1,0 +1,79 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+<!-- Elemento raiz da página, com idioma português brasileiro -->
+<html lang="pt-br">
+<!-- Cabeçalho da página com metadados -->
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Netflix</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Corpo da página -->
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Título principal da página -->
+        <h1>Quem está assistindo?</h1>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção dos perfis de usuário, com rótulo para acessibilidade -->
+        <section class="profiles" aria-label="Perfis de usuário">
+            <!-- Lista não ordenada de perfis principais -->
+            <ul class="profile-list" aria-label="Perfis principais">
+                <li class="profile">
+                    <a href="catalogo/catalogo.html" class="profile-link">
+                        <figure>
+                            <img src="/assets/perfil-1.jpeg" alt="Avatar do Perfil 1">
+                            <figcaption>Alan</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="catalogo/catalogo.html" class="profile-link">
+                        <figure>
+                            <img src="/assets/perfil-2.jpeg" alt="Avatar do Perfil 2">
+                            <figcaption>Snow</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Lista não ordenada de outros perfis -->
+            <ul class="profile-list" aria-label="Outros perfis">
+                <li class="profile">
+                    <a href="catalogo/catalogo.html" class="profile-link">
+                        <figure>
+                            <img src="/assets/perfil-3.jpg" alt="Avatar do Perfil 3">
+                            <figcaption>Kyra</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="catalogo/catalogo.html" class="profile-link">
+                        <figure>
+                            <img src="/assets/perfil-4.jpg" alt="Avatar do Perfil 4">
+                            <figcaption>Tom</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Texto pequeno com copyright -->
+        <small>&copy; 2026 Netflix</small>
+    </footer>
+    <!-- Botão para alternar tema -->
+    <button id="theme-toggle" aria-label="Alternar entre modo claro e escuro"></button>
+    <!-- Script para funcionalidade de dark/light mode -->
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
